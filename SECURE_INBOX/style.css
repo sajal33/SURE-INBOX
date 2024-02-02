@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+
+}
+header nav a{
+    color: white;
+    margin-right: 30px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+header div.sign-in-up button{
+    background-color: aqua;
+    font-size: 16px;
+    font-weight: 550;
+    padding: 4px 12px;
+    margin-left: 20px;
+}
+header div.sign-in-up button:last-child{
+    background-color: rgb(241, 147, 31);
+}
+div.popup-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+div.popup-container div.popup{
+    background-color: white;
+    width: 350px;
+    border-radius: 5px;
+    padding: 20px 25px 30px 25px;
+}
+div.popup-container div.popup h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+div.popup-container div.popup h2 button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    font-weight: 550;
+    color: grey;
+}
+div.popup-container div.popup input{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    
+    border-bottom: 2px solid black;
+    border-radius: 0;
+    padding: 5px 0;
+    font-weight: 550;
+    font-size: 14px;
+    outline: none;
+}
+div.popup-container div.popup button.login-btn , div.popup-container div.register button.register-btn{
+    font-weight: 550;
+    font-size: 15px;
+    color: white;
+    background-color: grey;
+    padding: 4px 10px ;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+}
+div.popup-container div.register{
+    background-color: white;
+}
+div.user{
+    color: darkblue;
+    background-color: lightblue;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+div.user a{
+    color:rgb(201, 49, 49);
+}
